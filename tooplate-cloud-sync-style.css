@@ -233,15 +233,15 @@ https://www.tooplate.com/view/2142-cloud-sync
         }
 
         .hero-bg:nth-child(1) {
-            background-image: url('images/tooplate-cloud-sync-bg01.jpg');
+            background-image: url('images/pbtc.jpg');
         }
 
         .hero-bg:nth-child(2) {
-            background-image: url('images/tooplate-cloud-sync-bg02.jpg');
+            background-image: url('images/unnamed.jpg');
         }
 
         .hero-bg:nth-child(3) {
-            background-image: url('images/tooplate-cloud-sync-bg03.jpg');
+            background-image: url('images/pb.jpg');
         }
 
         @keyframes pulse {
