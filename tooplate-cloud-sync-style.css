@@ -315,63 +315,39 @@ https://www.tooplate.com/view/2142-cloud-sync
             gap: 3rem;
         }
 
-        /* Two Column Features */
-        .features-two-col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
+       /* Two Column Features */
+.features-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
 
-        .feature-card-large {
-            background: rgba(30, 41, 59, 0.5);
-            border: 1px solid rgba(99, 102, 241, 0.2);
-            padding: 2.5rem;
-            border-radius: 1rem;
-            transition: all 0.3s ease;
-        }
+.feature-card-large {
+    width: 800px;
+    height: 800px;
 
-        .feature-card-large:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
-            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1);
-        }
+    /* background */
+    background-image: url("../images/executive.jpg");
+    background-size: cover;           /* ครอบคลุมเต็มพื้นที่ */
+    background-position: center center; /* จัดกลางแนวนอน + แนวตั้ง */
+    background-repeat: no-repeat;
 
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: var(--gradient);
-            border-radius: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-        }
+    border-radius: 1rem;              /* มุมโค้ง */
+    padding: 0;                        /* ไม่ต้องมี padding */
+    border: none;                      /* เอา border ออกถ้าไม่ต้องการ */
+    
+    /* จัดให้อยู่กลางหน้า */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 
-        .feature-card-large h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-checklist {
-            list-style: none;
-            margin-top: 1.5rem;
-        }
-
-        .feature-checklist li {
-            padding: 0.5rem 0;
-            color: var(--text-secondary);
-            position: relative;
-            padding-left: 1.5rem;
-        }
-
-        .feature-checklist li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-weight: bold;
-        }
+.feature-card-large:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1);
+}
 
         /* Four Column Features */
         .features-four-col {
