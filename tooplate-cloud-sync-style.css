@@ -232,18 +232,90 @@ https://www.tooplate.com/view/2142-cloud-sync
             background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9));
         }
 
-        .hero-bg:nth-child(1) {
-            background-image: url('images/pbtc.jpg');
-        }
+ /* ============== Hero Section - ขนาดเล็กพอดี ============== */
+.hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    margin-top: 4rem;
+}
 
-        .hero-bg:nth-child(2) {
-            background-image: url('images/unnamed.jpg');
-        }
+.hero-backgrounds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
-        .hero-bg:nth-child(3) {
-            background-image: url('images/pb.jpg');
-        }
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeSlideshow 15s infinite;
+}
 
+.hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9));
+    z-index: 1;
+}
+
+.hero-bg:nth-child(1) { background-image: url('images/pbtc.jpg'); animation-delay: 0s; }
+.hero-bg:nth-child(2) { background-image: url('images/pbtc2.jpg'); animation-delay: 5s; }
+.hero-bg:nth-child(3) { background-image: url('images/pb.jpg'); animation-delay: 10s; }
+
+@keyframes fadeSlideshow {
+    0%, 100% { opacity: 0; }
+    8%, 32% { opacity: 1; }
+    35%, 100% { opacity: 0; }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    padding: 0 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: 2.1rem; /* ลดขนาดหัวข้อ */
+    margin-bottom: 0.8rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem; /* ลดขนาดซับไตเติล */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* บนมือถือ */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh; /* เล็กพอดีบนมือถือ */
+    }
+    .hero-content h1 {
+        font-size: 1.7rem;
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
         @keyframes pulse {
             0%, 100% { transform: scale(1); opacity: 0.5; }
             50% { transform: scale(1.1); opacity: 0.3; }
