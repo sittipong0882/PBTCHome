@@ -232,90 +232,90 @@ https://www.tooplate.com/view/2142-cloud-sync
             background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9));
         }
 
- /* ============== Hero Section - ขนาดเล็กพอดี ============== */
-.hero {
-    position: relative;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    color: white;
-    margin-top: 4rem;
-}
+        /* ======= Hero Section ======= */
+        .hero {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            color: white;
+            margin-top: 4rem;
+        }
 
-.hero-backgrounds {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
+        .hero-backgrounds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
 
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0;
-    animation: fadeSlideshow 15s infinite;
-}
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0;
+            animation: fadeSlideshow 15s infinite;
+        }
 
-.hero-bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9));
-    z-index: 1;
-}
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9));
+            z-index: 1;
+        }
 
-.hero-bg:nth-child(1) { background-image: url('images/pbtc.jpg'); animation-delay: 0s; }
-.hero-bg:nth-child(2) { background-image: url('images/pbtc2.jpg'); animation-delay: 5s; }
-.hero-bg:nth-child(3) { background-image: url('images/pb.jpg'); animation-delay: 10s; }
+        .hero-bg:nth-child(1) { background-image: url('images/pbtc.jpg'); animation-delay: 0s; }
+        .hero-bg:nth-child(2) { background-image: url('images/pbtc2.jpg'); animation-delay: 5s; }
+        .hero-bg:nth-child(3) { background-image: url('images/pb.jpg'); animation-delay: 10s; }
 
-@keyframes fadeSlideshow {
-    0%, 100% { opacity: 0; }
-    8%, 32% { opacity: 1; }
-    35%, 100% { opacity: 0; }
-}
+        @keyframes fadeSlideshow {
+            0%, 100% { opacity: 0; }
+            8%, 32% { opacity: 1; }
+            35%, 100% { opacity: 0; }
+        }
 
-.hero-content {
-    position: relative;
-    z-index: 10;
-    padding: 0 1.5rem;
-}
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            padding: 0 1.5rem;
+        }
 
-.hero-content h1 {
-    font-size: 2.1rem; /* ลดขนาดหัวข้อ */
-    margin-bottom: 0.8rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-}
+        .hero-content h1 {
+            font-size: 2.1rem; /* ลดขนาดหัวข้อ */
+            margin-bottom: 0.8rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        }
 
-.hero-subtitle {
-    font-size: 1.25rem; /* ลดขนาดซับไตเติล */
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-}
+        .hero-subtitle {
+            font-size: 1.25rem; /* ลดขนาดซับไตเติล */
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+        }
 
-/* บนมือถือ */
-@media (max-width: 768px) {
-    .hero {
-        height: 60vh; /* เล็กพอดีบนมือถือ */
-    }
-    .hero-content h1 {
-        font-size: 1.7rem;
-    }
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-}
+        /* บนมือถือ */
+        @media (max-width: 768px) {
+            .hero {
+                height: 60vh; /* เล็กพอดีบนมือถือ */
+            }
+            .hero-content h1 {
+                font-size: 1.7rem;
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+        }
         @keyframes pulse {
             0%, 100% { transform: scale(1); opacity: 0.5; }
             50% { transform: scale(1.1); opacity: 0.3; }
@@ -419,47 +419,9 @@ https://www.tooplate.com/view/2142-cloud-sync
     transform: translateY(-5px);
     border-color: var(--primary);
     box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1);
-}
+} 
 
-        /* Four Column Features */
-        .features-four-col {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-        }
-
-        .feature-card-small {
-            background: rgba(30, 41, 59, 0.3);
-            border: 1px solid rgba(99, 102, 241, 0.1);
-            padding: 2rem;
-            border-radius: 1rem;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .feature-card-small:hover {
-            background: rgba(99, 102, 241, 0.1);
-            border-color: var(--primary);
-            transform: translateY(-3px);
-        }
-
-        .feature-icon-small {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-
-        .feature-card-small h4 {
-            font-size: 1.1rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .feature-card-small p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        /* Pricing Section */
+        /* ประวัติวิทยาลัย 1 */
         .pricing {
             padding: 4rem 2rem;
             max-width: 1200px;
@@ -646,7 +608,7 @@ https://www.tooplate.com/view/2142-cloud-sync
             .pricing-cards { grid-template-columns: 1fr; }
         }
 
-        /* About Section */
+        /* ข้อมูลวิทยาลัย */
         .about {
             padding: 4rem 2rem;
             background: var(--surface);
@@ -731,7 +693,7 @@ https://www.tooplate.com/view/2142-cloud-sync
             margin-bottom: 1.5rem;
         }
 
-        /* Contact Section */
+        /* ประวัติวิทยาลัย 1 */
         .contact {
             padding: 4rem 2rem;
             max-width: 1200px;
@@ -760,203 +722,7 @@ https://www.tooplate.com/view/2142-cloud-sync
             align-items: start;
         }
 
-        /* Contact Form Styling */
-        .contact-form-wrapper {
-            background: var(--surface);
-            padding: 2.5rem;
-            border-radius: 1rem;
-            border: 1px solid rgba(99, 102, 241, 0.2);
-        }
-
-        .form-header {
-            margin-bottom: 2rem;
-        }
-
-        .form-header h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .form-header p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.25rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--text);
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.875rem;
-            background: rgba(15, 23, 42, 0.5);
-            border: 1px solid rgba(99, 102, 241, 0.2);
-            border-radius: 0.5rem;
-            color: var(--text);
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-            background: rgba(15, 23, 42, 0.8);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-        }
-
-        .submit-button {
-            width: 100%;
-            padding: 1rem;
-            background: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 0.5rem;
-        }
-
-        .submit-button:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
-        }
-
-        /* Contact Info Styling */
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .quick-contact {
-            background: var(--surface);
-            padding: 2rem;
-            border-radius: 1rem;
-            border: 1px solid rgba(99, 102, 241, 0.2);
-        }
-
-        .quick-contact h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-methods {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .contact-method {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: rgba(15, 23, 42, 0.5);
-            border-radius: 0.75rem;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-        }
-
-        .contact-method:hover {
-            background: rgba(99, 102, 241, 0.1);
-            border-color: var(--primary);
-            transform: translateX(5px);
-        }
-
-        .method-icon {
-            font-size: 1.5rem;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(99, 102, 241, 0.1);
-            border-radius: 0.5rem;
-        }
-
-        .method-details {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .method-details strong {
-            color: var(--text);
-            font-size: 0.95rem;
-        }
-
-        .method-details span {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-        }
-
-        .office-locations {
-            background: var(--surface);
-            padding: 2rem;
-            border-radius: 1rem;
-            border: 1px solid rgba(99, 102, 241, 0.2);
-        }
-
-        .office-locations h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .location-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-
-        .location {
-            padding: 1rem;
-            background: rgba(15, 23, 42, 0.5);
-            border-radius: 0.75rem;
-            border-left: 3px solid var(--primary);
-            transition: all 0.3s ease;
-        }
-
-        .location:hover {
-            background: rgba(15, 23, 42, 0.7);
-            transform: translateX(5px);
-        }
-
-        .location strong {
-            color: var(--text);
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .location p {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            line-height: 1.5;
-        }
+        
 
         /* Footer */
         .footer {
