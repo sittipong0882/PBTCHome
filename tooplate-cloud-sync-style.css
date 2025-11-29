@@ -822,3 +822,116 @@ https://www.tooplate.com/view/2142-cloud-sync
             }
             .feature-stats { justify-content: center; }
         }
+        /* แก้ไขปัญหาจุดลิสต์ไม่ตรงกับตัวอักษรในส่วนประวัติ */
+.about-content ul {
+    padding-left: 20px; /* ระยะห่างจากขอบซ้าย */
+    list-style-position: inside; /* สำคัญที่สุด! ทำให้จุดอยู่ "ภายใน" ขอบข้อความ */
+}
+
+.about-content li {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.6;
+}
+/* สไตล์ตารางสำหรับข้อมูลหลักสูตร */
+.curriculum-section {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.curriculum-section h3,
+.curriculum-section h4,
+.curriculum-section h5 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.curriculum-section h4 {
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+}
+
+.curriculum-section h5 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.curriculum-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.curriculum-table th,
+.curriculum-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.curriculum-table th {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.curriculum-table tbody tr:hover {
+    background: rgba(99, 102, 241, 0.05);
+}
+
+/* บนมือถือ */
+@media (max-width: 600px) {
+    .curriculum-table th,
+    .curriculum-table td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.95rem;
+    }
+}
+/* ปรับลิสต์ประวัติให้เรียงสวย */
+.about-content ul {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+.about-content li {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* สไตล์รายการย่อย */
+.about-content .sub-item {
+    display: block;
+    margin-top: 0.3rem;
+    text-indent: 1.8em;
+    color: var(--text-secondary);
+    font-size: 0.95em;
+}
+/* ปรับขนาดตัวอักษรในลิสต์ประวัติให้ใหญ่ขึ้น เท่ากับเนื้อหาตาราง */
+.about-content ul {
+    padding-left: 20px;
+    list-style-position: inside;
+    font-size: 1.125rem; /* ≈ 18px — ใหญ่กว่าปกติเล็กน้อย */
+}
+
+.about-content li {
+    margin-bottom: 1.3rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* รายการย่อยให้เล็กลงนิดหน่อยเพื่อความแตกต่าง */
+.about-content .sub-item {
+    display: block;
+    margin-top: 0.3rem;
+    text-indent: 1.8em;
+    color: var(--text-secondary);
+    font-size: 1rem; /* เล็กลงเล็กน้อยจากข้อความหลัก */
+}
