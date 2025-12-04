@@ -278,8 +278,8 @@ https://www.tooplate.com/view/2142-cloud-sync
         }
 
         .hero-bg:nth-child(1) { background-image: url('images/InfrontPBTC.png'); animation-delay: 0s; }
-        .hero-bg:nth-child(2) { background-image: url('images/Field.jpg'); animation-delay: 5s; }
-        .hero-bg:nth-child(3) { background-image: url('images/22222.jpg'); animation-delay: 10s; }
+        .hero-bg:nth-child(2) { background-image: url('images/DOME2.jpg'); animation-delay: 5s; }
+        .hero-bg:nth-child(3) { background-image: url('images/VTPB.jpg'); animation-delay: 10s; }
 
         @keyframes fadeSlideshow {
             0%, 100% { opacity: 0; }
@@ -354,6 +354,17 @@ https://www.tooplate.com/view/2142-cloud-sync
                 transform: translateY(0);
             }
         }
+        h2 {
+    font-size: 3.3rem;      /* ขนาดตัวใหญ่ */
+    font-weight: 700;      /* หนา */
+    margin-bottom: 0.5rem;
+}
+
+    .hero-subtitle {
+    font-size: 1.7rem;     /* ใหญ่กว่าปกติ */
+    font-weight: 500;
+    margin-top: 0;
+}
 
         /* Features Section */
         .features {
@@ -557,6 +568,18 @@ https://www.tooplate.com/view/2142-cloud-sync
     border-radius: 1rem;
     margin: 1.5rem auto;
     display: block;
+}
+.img-row {
+    display: flex;        /* ให้วางเรียงในแนวนอน */
+    gap: 1rem;            /* ระยะห่างระหว่างภาพ */
+    justify-content: center; /* จัดให้อยู่กลางหน้า (ถ้าต้องการ) */
+}
+
+.school-img {
+    width: 100%;
+    max-width: 500px;     /* กำหนดความกว้างสูงสุดของแต่ละรูป */
+    height: auto;         /* รักษาสัดส่วนรูป */
+    border-radius: 10px;  /* เพิ่มมุมโค้งถ้าต้องการ */
 }
 
         /* Animated Background */
