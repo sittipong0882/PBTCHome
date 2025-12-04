@@ -277,9 +277,9 @@ https://www.tooplate.com/view/2142-cloud-sync
             z-index: 1;
         }
 
-        .hero-bg:nth-child(1) { background-image: url('images/pbtc.jpg'); animation-delay: 0s; }
-        .hero-bg:nth-child(2) { background-image: url('images/pbtc2.jpg'); animation-delay: 5s; }
-        .hero-bg:nth-child(3) { background-image: url('images/pb.jpg'); animation-delay: 10s; }
+        .hero-bg:nth-child(1) { background-image: url('images/InfrontPBTC.png'); animation-delay: 0s; }
+        .hero-bg:nth-child(2) { background-image: url('images/Field.jpg'); animation-delay: 5s; }
+        .hero-bg:nth-child(3) { background-image: url('images/22222.jpg'); animation-delay: 10s; }
 
         @keyframes fadeSlideshow {
             0%, 100% { opacity: 0; }
@@ -551,6 +551,13 @@ https://www.tooplate.com/view/2142-cloud-sync
             color: var(--secondary);
             font-weight: bold;
         }
+        .school-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+    margin: 1.5rem auto;
+    display: block;
+}
 
         /* Animated Background */
         .floating-shapes {
@@ -935,3 +942,4 @@ https://www.tooplate.com/view/2142-cloud-sync
     color: var(--text-secondary);
     font-size: 1rem; /* เล็กลงเล็กน้อยจากข้อความหลัก */
 }
+
