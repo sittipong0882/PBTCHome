@@ -422,5 +422,16 @@ a,button{outline:none}
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
 }
+.footer-column a {
+    display: block;           /* บังคับให้ขึ้นบรรทัดใหม่ทุกอัน */
+    color: #d0d0d0;           /* สีเทาอ่านง่ายบนพื้นเข้ม */
+    margin-bottom: 4px;       /* ระยะห่างแต่ละบรรทัด */
+    text-decoration: none;    /* เอาเส้นใต้ลิงก์ออก */
+    font-size: 1rem;          /* ขนาดอ่านง่าย */
+}
+
+.footer-column a:hover {
+    color: #ffffff;           /* เปลี่ยนสีเวลา hover */
+}
 
 /* End of CSS */
